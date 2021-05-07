@@ -1,0 +1,62 @@
+.invisible{
+    visibility: hidden;
+}
+.img{
+    width: 1em;
+    padding-right: 5px;
+}
+h1{
+    text-align: center;
+}
+#patient{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+#data{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+#rp{
+    margin: 40px 0  40px 40px;
+}
+input{
+    text-align: center;
+    border: none;
+    border-bottom: #777 groove ;
+}
+table{
+    margin-bottom: 50px;
+}
+.desc{
+    width:50%
+}
+.desc > input{
+    width: 96%;
+}
+.quantity {
+    width: 10%;
+}
+.quantity>input{
+    width: 90%;
+}
+.price>input{
+    width: 90%;
+}
+.value>input{
+    width: 90%;
+}
+#footer{
+    display: flex;
+    justify-content: center;
+}
+#doctor{
+    float: right;
+    margin: 3em;
+
+}
+#signature{
+    width: 50px;
+    border: #777 solid;
+}

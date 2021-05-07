@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fatura</title>
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+  <body>
+    <div>
+        <h1 onclick="enableButtons()">
+            <img class="img" src="https://thumbs.dreamstime.com/z/dental-icon-clean-teeth-shiny-tooth-illustration-isolated-white-web-sites-mobile-167061879.jpg">
+             Fature</h1>
+        <br>
+            <form>
+                <div id='data'>
+                    <label for="data">DATA</label>
+                    <input type="date" id="today" placeholder="DD/MM/YYYY">
+                </div>
+            <div id="patient">
+                <label for="name">EMER</label>
+                <input type="text" id="name" />
+          
+                <label for="lastName">MBIEMER</label>
+                <input type="text" id="lastName" />
+            </div>
+            <br>
+            
+            
+            
+            <p id="rp">RP// <button type="button" id="add" onclick="addService()">Shto</button></p> 
+    
+            <table id="table">
+                <tbody >                     
+                <tr>
+                    <th class="desc">Pershkrimi</th>
+                    <th class="quantity">sasia</th>
+                    <th class="price">Cmimi</th>
+                    <th class="value">Vlera</th>
+                </tr>
+                <tr>
+                    <td class="desc"><input type="text"></td>
+                    <td class="quantity"><input type="number" value="1" onkeyup="calculate()"></td>
+                    <td class="price"><input type="number" onkeyup="calculate()"></td>
+                    <td class="value"><input type="number" readonly></td>
+                    <td><button type="button" onclick="deleteRow(this)" class="delete">X</button></td>
+                </tr> 
+            </tbody>
+            </table>
+            <div id="footer">
+                <label for="total">TOTALI</label>
+                <input id="total" type="number" readonly><span style="margin: 10px;">Leke</span>
+                <button type="button" id="result" onclick="getTotal()">LLOGARIT</button>
+                <button type="button" onclick="print()">Printo</button>
+            </div>
+           
+        </form>
+
+    </div>
+    
+<h3 id="doctor">Metion Becaj <span id="signature"></span></h3>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
